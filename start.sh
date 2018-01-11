@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Enable i2c - needed for the Display-O-Tron HAT
-modprobe i2c-dev
-
 # Run one process loop
 python src/process.py
 

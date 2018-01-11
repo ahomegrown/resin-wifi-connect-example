@@ -2,7 +2,7 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-python:2.7
 
 # Set the maintainer
-LABEL maintainer="Joe Roberts <joe@resin.io>, Zahari Petkov <zahari@resin.io>"
+LABEL maintainer="Andrew Home <andrew.home.lee@gmail.com>"
 
 # Enable systemd init system
 ENV INITSYSTEM on
@@ -38,15 +38,10 @@ RUN curl https://api.github.com/repos/resin-io/resin-wifi-connect/releases/lates
 RUN apt-get update && apt-get install -yq --no-install-recommends \
     python-dev \
     python-smbus \
-    python-psutil \
-    wireless-tools && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip
 RUN pip install --upgrade pip
-
-# Install dot3k library
-RUN pip install dot3k
 
 # -- End of Display-O-Tron HAT section -- #
 
