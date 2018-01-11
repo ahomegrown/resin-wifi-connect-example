@@ -24,7 +24,7 @@ def main():
 #     # flag set to 'true'. This forces resin-wifi-connect to remove any
 #     # previously configured WiFi connections.
 #     print("Button pressed")
-#     subprocess.call(["resin-wifi-connect", "--clear=true"])
+    subprocess.call(["resin-wifi-connect", "--clear=true"])
     print('hello N2!')
 
 
