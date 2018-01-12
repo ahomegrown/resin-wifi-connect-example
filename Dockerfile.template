@@ -1,5 +1,5 @@
 # Base-image for python on any machine using a template variable
-FROM resin/%%RESIN_MACHINE_NAME%%-python:2.7
+FROM resin/%%RESIN_MACHINE_NAME%%-python:3.4
 
 # Set the maintainer
 LABEL maintainer="Andrew Home <andrew.home.lee@gmail.com>"
@@ -34,7 +34,7 @@ RUN curl https://api.github.com/repos/resin-io/resin-wifi-connect/releases/lates
 # -- End of resin-wifi-connect section -- #
 
 # Upgrade pip
-RUN pip install --upgrade pip
+RUN pip install paho-mqtt--upgrade pip
 
 
 
