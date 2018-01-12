@@ -3,6 +3,7 @@
 import time
 import pandas as pd
 
+
 def main():
     # Disable touch repeat
 #     touch.enable_repeat(False)
