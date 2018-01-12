@@ -2,7 +2,6 @@
 
 import time
 import subprocess
-import dothat.touch as touch
 import process
 
 
