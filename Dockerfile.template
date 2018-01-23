@@ -33,7 +33,7 @@ RUN curl https://api.github.com/repos/resin-io/resin-wifi-connect/releases/lates
 
 # -- End of resin-wifi-connect section -- #
 
-# requirements file
+# requirements file for python and connection
 COPY requirements.txt ./
 RUN pip install -r ./requirements.txt --upgrade pip
 
