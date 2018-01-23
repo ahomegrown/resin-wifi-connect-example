@@ -15,7 +15,7 @@ def on_connect(client, userdata, flags, rc):
     """Send data once when connected connection
     """
     print("Connection returned result: " + str(rc) )
-    value = 42
+    value = 97
     data = {"state": {"reported": {"reading": value}}}
     mqttc.publish("$aws/things/{}/shadow/update".format(thing_name), json.dumps(data), qos=1)
     mqttc.publish("cats", json.dumps(data), qos=1)
