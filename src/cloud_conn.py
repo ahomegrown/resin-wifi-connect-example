@@ -7,7 +7,7 @@ import certifi
 import paho.mqtt.client as paho
 
 # Set up AWS variables
-awshost = os.getenv("AWS_HOST", "data.iot.us-east-1.amazonaws.com")
+awshost = os.getenv("AWS_HOST", "data.iot.us-west-2.amazonaws.com")
 awsport = os.getenv("AWS_PORT", 8883)
 thing_name = os.getenv("UUID")
 
